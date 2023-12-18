@@ -13,7 +13,7 @@
         <input type="text" name="fname" id="name" placeholder="Enter first name" required>
     
         <label for="lname">Last Name</label>
-        <input type="text" name="lname" id="lname" placeholder="Enter last name" required>
+        <input type="text" name="lname" id="lname" placeholder="Enter last name" required> <br>
     
         <label for="gender">Gender</label>
         <select name="gender" id="gender" required>
@@ -25,7 +25,7 @@
         <label for="DOB">
             Date of Birth:
         </label>
-        <input type="date" id="DOB" name="DOB" required>
+        <input type="date" id="DOB" name="DOB" required> <br>
 
         <label for="email">Email Address</label>
         <input type="email" name="email" id="email" placeholder="Enter email address">
@@ -41,10 +41,10 @@
             <option value="Undergraduate">Undergraduate</option>
             <option value="Junior">Junior/Middel school</option>
             <option value="Post-graduate">Post graduate</option>
-        </select>
+        </select>  <br>
 
         <label for="country">Country</label>
-        <select  id="country" name="country">
+        <select  id="country" name="country" required>
             <option value="" disabled selected hiddden>select country</option>
             <option value="AF">Afghanistan</option>
             <option value="AX">Aland Islands</option>
@@ -299,6 +299,32 @@
             <option value="ZM">Zambia</option>
             <option value="ZW">Zimbabwe</option>
         </select>
+
+        <label for="state">State/City of Residence</label>
+        <input type="text" id="state" name="state" placeholder="Enter your state" required /><br/>
+
+        <label for="employment">Employment Status</label>
+        <select id="employment" name="employment" required>
+            <option value="" disabled selected hidden>Select Employment Status</option>
+            <option value="employed">employed</option>
+            <option value="unemployed">UnEmployed</option>
+            <option value="selfemployed">Self-employed</option>
+        </select>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" placeholder="07032177140" required> <br>
+
+        <label for="school">Choose School</label>
+        <select name="school" id="school" required>
+            <option value="" selected disabled hidden>Select school</option>
+            <option value="creative">School of Creatives</option>
+            <option value="business">School of Business</option>
+        </select>
+
+        <label for="course">Choose Course of Study</label>
+        <select name="course" id=""></select>
+
+
     </form>
 </body>
 </html>
