@@ -46,6 +46,19 @@ nav{
     letter-spacing: -0.00063rem;
 }
 
+
+select{
+    height: 40px;
+     width: 91px;
+    background-color: #fff;
+     border: 2px solid #646e7a;
+     border-radius: 6px;
+}
+
+.dropdown {
+    display: none;
+}
+
 nav > button {
     border-radius: 0.375rem;
     border: 2px solid #646E7A;
@@ -428,11 +441,11 @@ p.copyright span {
         display: center;
     }
 
-    nav a {
+    nav {
         display: none;
     }
 
-    .header_link{
+    .dropdown{
         display: inline;
     }
 
