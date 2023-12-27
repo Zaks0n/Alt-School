@@ -1,3 +1,14 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body{
     background-color: #F7FDFC;
     height: 100vh;
@@ -53,7 +64,7 @@ form > div > label {
     letter-spacing: 0.00625rem;
     }
 
-    form > div > input {
+form > div > input {
         color: var(--Text-Headings, #011C34);
     font-family: "Sofia Pro";
     font-size: 0.875rem;
@@ -64,10 +75,10 @@ form > div > label {
     padding: 0.87rem 1rem;
     border-radius: 0.125rem;
     border: 1px solid var(--CL-Gray-3, #F0F0F0);
-    }
+}
 
 
-    form > div > select {
+form > div > select {
         color: var(--Text-Headings, #011C34);
     font-family: Sofia Pro;
     font-size: 0.875rem;
@@ -79,17 +90,17 @@ form > div > label {
     border-radius: 0.125rem;
     border: 1px solid var(--CL-Gray-3, #F0F0F0);
     background-color: transparent;
-    }
+}
 
-    .act {
+.act {
         grid-column: 1 / 3;
-    }
+}
     
-    .pass {
+.pass {
         grid-column: 1 / 3;
-    }
+}
 
-    input.reg { 
+input.reg { 
     background-color: var(--CL-Green, #2EC4B6);
     filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
     grid-column: 1 / 3;
@@ -105,12 +116,30 @@ form > div > label {
     border: none;
     }
 
-    .terms  {
-        color: #000;
-font-family: "Sofia Pro";
-font-size: 0.875rem;
-font-style: normal;
-font-weight: 400;
-line-height: 1.5625rem; /* 178.571% */
-grid-column: 1 / 3;
+    p > span {
+        color: var(--CL-Green, #2EC4B6);;
     }
+
+.terms  {
+        color: #000;
+        font-family: "Sofia Pro";
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5625rem; /* 178.571% */
+        grid-column: 1 / 3;
+    }
+
+    @media  (max-width: 767px){
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+
+        form{
+           display: flex;
+           flex-direction: column;
+        }
+    }
+        
+
